@@ -1,0 +1,475 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat-ExtraBold'),
+  url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+  url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+font-weight: 800;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'Montserrat';
+src: local('Montserrat-Bold'),
+url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+url("../fonts/Montserrat-Bold.woff") format("woff");
+font-weight: 700;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'Montserrat';
+src: local('Montserrat-Regular'),
+url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+url("../fonts/Montserrat-Bold.woff") format("woff");
+font-weight: 400;
+font-display: swap;
+}
+@font-face {
+font-family: 'Montserrat';
+src: local('Montserrat-SemiBold'),
+url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+url("../fonts/Montserrat-SemiBold.woff") format("woff");
+font-weight: 600;
+font-display: swap;
+}
+
+@font-face {
+  font-family: 'Birdrockers';
+  src: local('Birdrockers'),
+  url("../fonts/Birdrockers.woff2") format("woff2"),
+  url("../fonts/Birdrockers.woff") format("woff");
+font-weight: 400;
+font-display: swap;
+}
+
+:root {
+  --main-color: #000000;
+  --text-color: #ffffff;
+}
+
+h2, h3, p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+* ::before,
+* ::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  color: var(--text-color);
+  background-image: url(/img/background.jpg);
+  background-color: var(--main-color);
+  min-width: 1900px;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  text-transform: uppercase;
+}
+
+.about-ride__nft {
+  width: 325px;
+  height: 500px;
+}
+
+.list_reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--text-color);
+  line-height: 140%;
+  letter-spacing: 2px;
+}
+
+.header-container {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  width: 1700px;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgb(223, 217, 217), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 2px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header-nav__list {
+  width: 665px;
+  justify-content: space-between;
+}
+
+.header__img {
+  width: 120px;
+  height: 50px;
+}
+
+.header-nav__social {
+  width: 200px;
+  justify-content: space-between;
+}
+
+.header-nav__social__links {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.header-nav-discord {
+  background-image: url(../img/icon-discord.svg);
+}
+
+.header-nav-twitter {
+  background-image: url(../img/icon-twitter.svg);
+}
+
+.header-nav-inst {
+  background-image: url(../img/icon-instagram.svg);
+}
+
+.header-nav-tiktok {
+  background-image: url(../img/icon-tiktok.svg);
+}
+
+.header-nav-container {
+  width: 1223px;
+  justify-content: space-between
+}
+
+.header-nav__items {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.about-ride {
+  max-width: 1900px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.about-ride div {
+  display: flex;
+  width: 199%;
+  animation: about-ride 15s linear infinite;
+}
+
+.about-ride span {
+  display: flex;
+  width: 100%;
+  justify-content: space-between ;
+}
+
+@keyframes about-ride {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-86%);
+  }
+}
+
+
+.double__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.about-ride__logo {
+  width: 835px;
+  height: 340px;
+}
+
+.roadmap-item__logo {
+  width: 100px;
+  height: 50px;
+}
+
+
+.flex {
+  display: flex;
+}
+
+
+.footer__logo {
+  width: 700px;
+  height: 250px;
+}
+
+.footer-contacts__logo {
+  width: 120px;
+  height: 50px;
+}
+
+.info__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: var(--text-color);
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+
+}
+
+.about_info-text-item__text {
+  width: 760px;
+  padding-left: 20px;
+  border-left: 5px solid var(--text-color);
+  font-weight: 400;
+}
+
+.about_info-text-item__text:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.roadmap__title__text {
+
+}
+
+.about {
+  margin-bottom: 100px;
+}
+
+.roadmap-title {
+  padding-bottom: 20px;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgb(223, 217, 217), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 2px;
+  margin-bottom: 50px;
+}
+
+.roadmap-item {
+  border: 1px solid var(--text-color);
+  border-radius: 5%;
+  width: 200px;
+  min-height: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 10px 10px;
+}
+
+
+.roadmap-item__img {
+  width: 100px;
+}
+
+.roadmap__p {
+   font-size: 15px;
+ }
+
+ .roadmap-items {
+   justify-content: space-between;
+   margin-bottom: 70px;
+ }
+
+.roadmap-container-img {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgb(223, 217, 217), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 2px;
+  margin-bottom: 20px;
+ }
+
+.roadmap-item__descr {
+  font-size: 12px;
+}
+
+.roadmap-info {
+  width: 1200px;
+}
+
+.roadmap {
+  margin-bottom: 100px;
+}
+
+.team-title {
+  padding-bottom: 20px;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgb(223, 217, 217), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 2px;
+}
+
+.team-items-2 {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+
+.team-item__img {
+  width: 200px;
+}
+
+.team-item {
+  display: flex;
+  width: 700px;
+  border: 1px solid var(--text-color);
+  border-radius: 35px;
+  justify-content: space-between;
+}
+
+.team-item__title {
+  font-family: 'Birdrockers';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  color: var(--text-color);
+  line-height: 140%;
+  letter-spacing: 2px;
+  padding: 0 0 10px 140px;
+  display: flex;
+}
+
+.team-item-descr {
+  text-transform: capitalize;
+}
+
+.team-item-text {
+  padding: 10px;
+}
+
+.cross {
+  background-position: 50% 50%;
+  background-image: url(../img/cross.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+
+}
+
+.team {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgb(223, 217, 217), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 2px;
+  margin-bottom: 100px;
+ }
+
+.nft {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgb(223, 217, 217), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-position: 50% 98%;
+  z-index: 0;
+  background-size: 100% 2px;
+  margin-bottom: 90px;
+}
+
+.nft-container {
+  padding-bottom: 30px;
+  background-position: 50% 100%;
+  background-image: url(../img/table.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+.nft-item__descr {
+  text-align: justify;
+ }
+
+.nft-item__img {
+  width: 450px;
+  height: 630px;
+}
+
+.nft-item-img {
+  padding: 0 10px 0 10px;
+}
+
+
+.footer__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: var(--text-color);
+  letter-spacing: 3px;
+}
+
+.footer-title-logo {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer__descr {
+  text-align: justify;
+  border: 3px solid var(--text-color);
+  border-bottom: none;
+  border-radius: 20px;
+}
+
+.footer-descr {
+  padding: 5px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0), rgb(223, 217, 217), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 2px;
+}
+
+.footer-contacts {
+  padding: 20px 0 0 0;
+}
+
+.footer-contacts-logo__descr {
+  font-size: 10px;
+}
+
+.footer-contacts-descr {
+  width: 670px;
+  text-align: justify;
+}
+
+.footer-contacts__descr {
+  margin-left: 200px;
+  font-size: 10px;
+}
+
+.footer-contacts-link__item {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  padding: 2px;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-contacts-social {
+  margin-left: 500px;
+}
